@@ -6,11 +6,13 @@
 
 An extremely performant, completely custom-drawn alternative to NSSlider, with a very sensible API.
 
-One of the awesome features of [Producer](http://www.getproducer.com) is its ability to capture the frames of data going through a running iOS app that you are building. Producer uses that data to power a feature called Tracer as part of its debugging tools suite, the UI of which contains a horizontal NSSlider with tick marks that lets you scrub through the frames of data. For production apps and bigger projects, this can end up being tens or hundreds of thousands of frames of data, meaning thousands of tick marks in the NSSlider user interface.
+One of the awesome features of [Producer](http://www.getproducer.com) is its ability to capture the frames of data going through a running iOS app that you are building. Producer uses that data to power a feature called Tracer as part of its debugging tools suite, the UI of which contains a horizontal `NSSlider` with tick marks that lets you scrub through the frames of data. For production apps and bigger projects, this can end up being tens or hundreds of thousands of frames of data, meaning thousands of tick marks in the `NSSlider` user interface.
 
-We started to notice during stress-testing that Producer would get rather slow when it had to deal with so many data frames. Part of the solution was to optimize our file IO, but it turns out that a surprisingly huge amount of CPU time was being spent by NSSlider doing the drawing for the incredible number of tick marks in the UI.
+We started to notice during stress-testing that Producer would get rather slow when it had to deal with so many data frames. Part of the solution was to optimize our file IO, but it turns out that a surprisingly huge amount of CPU time was being spent by `NSSlider` doing the drawing for the incredible number of tick marks in the UI.
 
-That's why we created `LPDiscreteDrawnSlider`. It re-implements all of NSSlider's visual styling and interaction behavior in order to provide a viable alternative for high-demand applications. We also took the opportunity to simplify the API a bit. :)
+That's why we created `LPDiscreteDrawnSlider`. It re-implements all of `NSSlider`'s visual styling and interaction behavior in order to provide a viable alternative for high-demand applications. 
+
+We also took the opportunity to simplify the API a bit. :)
 
 
 ## Installation:

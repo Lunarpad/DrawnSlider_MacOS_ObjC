@@ -4,7 +4,7 @@
 
 **Language:** Objective-C
 
-An extremely performant, completely custom-drawn alternative to NSSlider, with a very sensible API.
+An extremely performant, completely custom-drawn alternative to `NSlider`, with a very sensible API.
 
 One of the awesome features of [Producer](http://www.getproducer.com) is its ability to capture the frames of data going through a running iOS app that you are building. Producer uses that data to power a feature called Tracer as part of its debugging tools suite, the UI of which contains a horizontal `NSSlider` with tick marks that lets you scrub through the frames of data. For production apps and bigger projects, this can end up being tens or hundreds of thousands of frames of data, meaning thousands of tick marks in the `NSSlider` user interface.
 
@@ -21,11 +21,11 @@ To install, simply download the source for this module and include `./DrawnSlide
 
 ## How it works:
 
-`LPDiscreteDrawnSlider` is simply a subclass of `NSView` which implements the drawing and interactions of an NSlider from scratch in a much more highly performant manner. It's styled to look exactly like an incremental NSSlider (including enabled state, slider knob interactions, etc.), but it can be completely customized.
+`LPDiscreteDrawnSlider` is simply a subclass of `NSView` which implements the drawing and interactions of an `NSlider` from scratch in a much more highly performant manner. It's styled to look exactly like an incremental `NSlider` (including enabled state, slider knob interactions, etc.), but it can be completely customized.
 
 ## Usage
 
-All you have to do is create an instance of `LPDiscreteDrawnSlider` as you would with an NSSlider, like so:
+All you have to do is create an instance of `LPDiscreteDrawnSlider` as you would with an `NSSlider`, like so:
 
 
 	- (void)setup_frameSlider

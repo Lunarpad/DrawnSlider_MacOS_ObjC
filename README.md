@@ -34,16 +34,16 @@ All you have to do is create an instance of `LPDiscreteDrawnSlider` as you would
 	    view.target = self;
 	    view.action = @selector(frameSliderDidAct);
 	    view.frame = [self _new_sliderFrame];
-    
+    	//
 	    self.frameSlider = view;
 	    [self.view addSubview:view];
 	}
 	- (NSRect)_new_sliderFrame
 	{
-	    CGFloat w = superview_contentSize.width - rightMargin - leftMargin;
+	    CGFloat w = self.view.frame.size.width - rightMargin - leftMargin;
 		CGFloat h = 40;
 	    NSRect frame = NSMakeRect(leftMargin, y, w, h);
-    
+    	//
 	    return frame;
 	}
 	

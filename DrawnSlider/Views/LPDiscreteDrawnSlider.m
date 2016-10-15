@@ -271,7 +271,7 @@ const CGFloat kSliderTrackThickness                                 = 3;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Runtime - Accessors - Layout - Overrides
+#pragma mark - Runtime - Accessors - Transforms
 
 - (NSUInteger)_tickIndexForXPosition:(CGFloat)xPosition
 { // this code might seem kind lame compared to doing the vector math to convert xposition to tick index,
@@ -409,7 +409,7 @@ const CGFloat kSliderTrackThickness                                 = 3;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Runtime - Imperatives - Drawing
+#pragma mark - Runtime - Imperatives - Overrides - Drawing
 
 - (void)drawRect:(NSRect)dirtyRect
 {
@@ -429,7 +429,7 @@ const CGFloat kSliderTrackThickness                                 = 3;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Runtime - Imperatives - Slider
+#pragma mark - Runtime - Imperatives - Drawing - Slider
 
 - (void)draw_sliderTrackInContext:(CGContextRef)context
 { // Slider track
@@ -455,7 +455,7 @@ const CGFloat kSliderTrackThickness                                 = 3;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Runtime - Imperatives - Knob
+#pragma mark - Runtime - Imperatives - Drawing - Knob
 
 - (void)draw_knobInContext:(CGContextRef)context
 {
